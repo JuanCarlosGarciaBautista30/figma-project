@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--code-font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Fjalla+One&family=Freeman&family=IM+Fell+DW+Pica:ital@0;1&family=Jacquarda+Bastarda+9+Charted&family=Jersey+15&family=Jersey+15+Charted&family=Jersey+20+Charted&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&family=Mingzat&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Ramabhadra&family=Rock+3D&family=Rubik+Marker+Hatch&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma project</title>
+  </head>
+  <body>
+
+    <header class="header-section">
+      <!--identificamos header con una clase -->
+      <img src="assets/logo.png" alt="" class="logo-header">
+      <h1>Dashboard</h1>
+      <input type="text" placeholder="Search Here" class="header-search-input">
+      <select name="" id="">
+        <option value="US">Eng (US)</option>
+        <option value="MX">Esp (MX)</option>
+        <option value="CAN">Port (BR)</option>
+      </select>
+      <img src="assets/bell.png" alt="" class="notifications-bell">
+      <img src="assets/perfil.jpg" alt="" class="user-profile">
+     
+    </header>
+    
+    <section class="container">
+
+      <aside class="sidebar-menu">
+        <button>Dashboard</button>
+      </aside>
+
+      <main><!--definimos el contenido principal del documento-->
+        <!--tres div para contenido de targetas -->
+        <div class="card-contatiner">
+          <div class="sales-container-info">
+            <div class="infographi-title">
+              <div>
+                <h3>Today Sales</h3>
+                <p>Sales Summery</p>
+              </div>
+              <div>
+                <button>Export</button>
+              </div>
+            </div>
+            <div class="infographic-sales">
+              <div class="small-cards"></div>
+              <div class="small-cards"></div>
+              <div class="small-cards"></div>
+              <div class="small-cards"></div>
+            </div>
+          </div>
+          <div class="visitor-graphic">
+            <h3>Visitor Insighst</h3>
+          </div>
+        </div>
+        <div class="card-contatiner">
+          <div class="graphic-boxes">
+            <h3>Total Revenue</h3>
+          </div>
+          <div class="graphic-boxes">
+            <h3>Customer Satisfaction</h3>
+          </div>
+          <div class="graphic-boxes">
+            <h3>Target vs Reality</h3>
+          </div>
+        </div>
+        <div class="card-contatiner">
+          <table class="information-products-table">
+            <thead>
+              <h3>Top Products</h3>
+            </thead>
+          </table>
+           <div class="graphics-table">
+            <h3>Sales Mapping by Country</h3>
+           </div>
+           <div class="graphics-table">
+            <h3>Volume vs Servises Level</h3>
+           </div>
+
+
+        </div>
+      </main>
+      
+    </section>
+    
+  </body>
+</html>

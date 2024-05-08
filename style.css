@@ -1,0 +1,101 @@
+:root{
+    /*declaración de variables*/
+    --light-sky-blue:#6b90eb;
+    --color-blue:#5d60ef;
+    --dark-blue:#06004f;
+    --mid-night-blue:#141c48;
+    --white-color:#ffffff;
+    --light-gray-color:#fafbfd;
+    --gray-color:#b0b1c3;
+    --ligth-red-color:#ffe2e6;
+    --dark_red-color:#fa5a7d;
+    --ligth-yellow-color:#fff4de;
+    --dark-yellow-color:#ff947a;
+    --ligth-green-color:#dcfce7;
+    --dark-green-color:#3dd856;
+    --light-purple-color:#f4e8ff;
+    --dark-purple-color:#bf83ff;
+}
+
+*{
+    font-family: "Ramabhadra";
+}
+
+.header-section{
+    height: 100px;
+    display: flex;
+    justify-content:space-between ;
+    border: 2px solid red;
+    background-color: #3dd856;
+}
+
+.logo-header{
+    width: 200px;
+    height: 60px;
+}
+
+.header-search-input{
+    width: 300px;
+    height: 40px;
+}
+
+select{
+    width: 100px;
+    height: 40px;
+}
+.notifications-bell{
+    width: 50px;
+    height: 50px;
+}
+
+.user-profile{
+    width: 60px;
+    height: 60px;
+}
+
+
+.container{
+    /*por defecto esta en display block. block-> flex*/
+    display: flex;
+}
+
+.sidebar-menu{
+    background-color: #fa5a7d;
+    width: 250px;
+
+}
+
+.card-contatiner{
+    display: flex;
+    height: 280px;
+    border: 1px solid var(--dark-blue);
+    background-color:white;
+}
+.sales-container-info{
+    width: 700px;
+}
+.infographi-title{
+    display:flex;
+    justify-content: space-between;
+}
+.infographic-sales{
+    display: flex;
+}
+
+.small-cards{
+    border: 2px solid red;
+    width: 140px;
+    height: 140px;
+}
+.visitor-graphic{
+    
+    border: 1px solid black;
+    width: 503px;
+
+}
+.graphic-boxes{
+    border: 1px solid brown;   
+}
+.graphics-table{
+    border: 1px solid blue;
+}
