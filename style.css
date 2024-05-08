@@ -15,42 +15,63 @@
     --dark-green-color:#3dd856;
     --light-purple-color:#f4e8ff;
     --dark-purple-color:#bf83ff;
+    --font-famili: "Ramabhadra";
 }
 
 *{
-    font-family: "Ramabhadra";
+    font-family:var(--font-famili);
+}
+
+body{
+    background-color:var(--white-color);
+   
 }
 
 .header-section{
-    height: 100px;
-    display: flex;
-    justify-content:space-between ;
-    border: 2px solid red;
-    background-color: #3dd856;
+    display: flex; 
+    align-items: center;
 }
 
 .logo-header{
+    padding-left: 20px;
     width: 200px;
     height: 60px;
 }
 
-.header-search-input{
-    width: 300px;
-    height: 40px;
+h1{
+    padding-right: 80px;
+    padding-left: 60px;
+}
+
+input{
+    width: 400px;
+    height: 45px;
+    background-color: var(--light-gray-color);
+    border-radius: 10px;
+    border: 0;
+    outline: none;/* elimina la linea del borde */
+    padding-left: 30px;
+    margin-right: 30px;
 }
 
 select{
     width: 100px;
     height: 40px;
+    border: 0;
+    outline: none;
+    margin-right: 30px;
 }
 .notifications-bell{
     width: 50px;
     height: 50px;
+    padding-left:50px;
+    padding-right: 20px;
 }
 
 .user-profile{
     width: 60px;
     height: 60px;
+    border-radius: 20px;
 }
 
 
@@ -60,16 +81,19 @@ select{
 }
 
 .sidebar-menu{
-    background-color: #fa5a7d;
     width: 250px;
 
 }
 
+.aside-container{
+    background-color: var(--color-blue);
+}
+
+/* shift + alt + A = hacer un bloque de comentarios*/
 .card-contatiner{
     display: flex;
     height: 280px;
     border: 1px solid var(--dark-blue);
-    background-color:white;
 }
 .sales-container-info{
     width: 700px;
