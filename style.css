@@ -16,6 +16,7 @@
     --light-purple-color:#f4e8ff;
     --dark-purple-color:#bf83ff;
     --font-famili: "Ramabhadra";
+    --gap-space:30px;
 }
 
 *{
@@ -34,17 +35,17 @@ body{
 
 .logo-header{
     padding-left: 20px;
-    width: 200px;
-    height: 60px;
+    width: 150px;
+    height: 45px;
 }
 
 h1{
-    padding-right: 80px;
-    padding-left: 60px;
+    padding-right: 100px;
+    padding-left: 160px;
 }
 
 input{
-    width: 400px;
+    width: 370px;
     height: 45px;
     background-color: var(--light-gray-color);
     border-radius: 10px;
@@ -73,30 +74,87 @@ select{
     height: 60px;
     border-radius: 20px;
 }
-
-
+/*###################################*/
+/*aside style section*/
 .container{
     /*por defecto esta en display block. block-> flex*/
     display: flex;
+
 }
 
 .sidebar-menu{
-    width: 250px;
+    margin-left: 30px;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: column;
+}
 
+/* estilos anidados. todos los botones dentro 
+   de la clase menú
+  son los que se les aplica el estilo
+*/
+.menu{
+    
+    li{
+        display: flex;
+        padding-top: 35px;
+        padding-left: 50px;
+        list-style: none;/*quitamos las viñetas de <li>*/
+               
+    }
+    button{
+        border: 0;
+        outline: none;
+        font-size: 15px;
+        background-color: var(--white-color);
+    }
+    
 }
 
 .aside-container{
-    background-color: var(--color-blue);
-}
-
-/* shift + alt + A = hacer un bloque de comentarios*/
-.card-contatiner{
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    margin-top: 80px;
     display: flex;
-    height: 280px;
-    border: 1px solid var(--dark-blue);
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background-color: var(--color-blue);
+    color: var(--white-color);
+   
+    button{
+        width: 140px;
+        height: 45px;
+        border-radius: 10px;
+        border: 0;
+        background-color:var(--white-color);
+        color: var(--light-sky-blue);
+    }
+    
+}
+/*##########################*/
+/*main style section*/
+main{
+    display: flex;
+    flex-direction: column;
+    gap:var(--gap-space);
+    padding: 35px;
+    background-color: var(--light-gray-color);
+}
+/* shift + alt + A = hacer un bloque de comentarios*/
+.card-container{
+    display: flex;
+    gap: var(--gap-space);
+    height: 260px;
+}
+.card{
+    background-color:var(--white-color);
+    border-radius: 10px;
 }
 .sales-container-info{
-    width: 700px;
+    width: 620px;
 }
 .infographi-title{
     display:flex;
@@ -107,19 +165,15 @@ select{
 }
 
 .small-cards{
-    border: 2px solid red;
     width: 140px;
     height: 140px;
 }
 .visitor-graphic{
-    
-    border: 1px solid black;
-    width: 503px;
-
+    width: 450px;
 }
 .graphic-boxes{
-    border: 1px solid brown;   
 }
 .graphics-table{
-    border: 1px solid blue;
+   
 }
+
