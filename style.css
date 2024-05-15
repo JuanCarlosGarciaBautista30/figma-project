@@ -1,179 +1,129 @@
 :root{
     /*declaración de variables*/
-    --light-sky-blue:#6b90eb;
-    --color-blue:#5d60ef;
-    --dark-blue:#06004f;
-    --mid-night-blue:#141c48;
-    --white-color:#ffffff;
-    --light-gray-color:#fafbfd;
-    --gray-color:#b0b1c3;
-    --ligth-red-color:#ffe2e6;
-    --dark_red-color:#fa5a7d;
-    --ligth-yellow-color:#fff4de;
-    --dark-yellow-color:#ff947a;
-    --ligth-green-color:#dcfce7;
-    --dark-green-color:#3dd856;
-    --light-purple-color:#f4e8ff;
-    --dark-purple-color:#bf83ff;
-    --font-famili: "Ramabhadra";
-    --gap-space:30px;
+   
+    --color-blue:#5D5FEF;
+    --dark-mid-night-blue:#151D48;
+    --gray-color:#737791;
+    --white-color:#FFFFFF;
+    --mid-night-blue:#05004E;
+    --light-gray-color:#F9FAFB;
+    --liht-red-color:#FFE2E5;
+    --red-color:#FA5A7D;
+    --mid-night-gray-color:#425166;
+    --blue-sky-color:#4079ED;
+    --light-yellow-color:#FFF4DE;
+    --yellow-color:#FF947A;
+    --light-green-color:#DCFCE7;
+    --green-color:#3CD856;
+    --light--purple-color:#F3E8FF;
+    --purple-color:#BF83FF;
+    /* table colors */
+    --blue:#0095FF;
+    --light_light_blue:#0095FF;
+    --gren:#00E096;
+    --light_light_green:#00E096;
+    --purple:#884DFF;
+    --ligth-light-purple:#C5A8FF;
+    --orange:#FF8F0D;
+    --light-light_orange:#FFD5A4;
+}
+
+/* reset de los valores */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
 }
 
 *{
-    font-family:var(--font-famili);
+    font-family:"poppins";
 }
 
-body{
-    background-color:var(--white-color);
-   
-}
-
-.header-section{
-    display: flex; 
-    align-items: center;
-}
-
-.logo-header{
-    padding-left: 20px;
-    width: 150px;
-    height: 45px;
-}
-
-h1{
-    padding-right: 100px;
-    padding-left: 160px;
-}
-
-input{
-    width: 370px;
-    height: 45px;
-    background-color: var(--light-gray-color);
-    border-radius: 10px;
-    border: 0;
-    outline: none;/* elimina la linea del borde */
-    padding-left: 30px;
-    margin-right: 30px;
-}
-
-select{
-    width: 100px;
-    height: 40px;
-    border: 0;
-    outline: none;
-    margin-right: 30px;
-}
-.notifications-bell{
-    width: 50px;
-    height: 50px;
-    padding-left:50px;
-    padding-right: 20px;
-}
-
-.user-profile{
-    width: 60px;
-    height: 60px;
-    border-radius: 20px;
-}
-/*###################################*/
-/*aside style section*/
-.container{
-    /*por defecto esta en display block. block-> flex*/
-    display: flex;
-
-}
-
-.sidebar-menu{
-    margin-left: 30px;
-    margin-right: 30px;
+.side-menu{ /* etiqueta aside */
     display: flex;
     flex-direction: column;
+    border: 2px solid red;/* indicador de espacio */
+    width: 345px;
+    height: 1311px;
+    
 }
 
-/* estilos anidados. todos los botones dentro 
-   de la clase menú
-  son los que se les aplica el estilo
-*/
+.back-ground-white{
+    background-color: var(--white-color);
+}
+
+.bar-title-side{
+    display: flex;/* logo y estiqueta h1 */
+    margin-top: 44px;
+    margin-left: 43px;
+    h1{
+        align-self: center;
+        margin-left: 24px;
+        font-size: 30px; 
+    }    
+}
+
 .menu{
-    
+    margin-left: 46px;
+    margin-right: 47px;
     li{
-        display: flex;
-        padding-top: 35px;
-        padding-left: 50px;
-        list-style: none;/*quitamos las viñetas de <li>*/
-               
+        list-style: none;/* eliminamos las viñetas */
+        margin-top: 48px;
+        button{
+            font-size: 18px;
+            display: flex;
+            border: 0;
+            outline: none;
+            align-items: center;/* alineamos los botones con los iconos */
+            gap: 24px;/* separamos los iconos */
+            padding-left: 24px;
+        }
+    }
+}
+
+.get-button-container{
+    width: 238px;
+    height: 259px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:var(--color-blue);
+    border-radius: 20px;
+    margin: 136px 143px 54px 53px;/* top, buttom, right, left */
+}
+
+.items-container{
+    width: 145px;
+    height: 198px;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    color: var(--white-color);
+
+    p{
+        text-align: center;
+        font-size: 12px;
     }
     button{
+        border-radius: 8px;
         border: 0;
         outline: none;
-        font-size: 15px;
-        background-color: var(--white-color);
+        font-size: 16px;
+        margin-top: 30px;
+        padding: 8px 38.5px 8px 38.5px;
+        color:var(--color-blue);
     }
-    
 }
-
-.aside-container{
-    width: 200px;
-    height: 220px;
-    border-radius: 10px;
-    margin-top: 80px;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 20px;
-    background-color: var(--color-blue);
-    color: var(--white-color);
-   
-    button{
-        width: 140px;
-        height: 45px;
-        border-radius: 10px;
-        border: 0;
-        background-color:var(--white-color);
-        color: var(--light-sky-blue);
-    }
-    
-}
-/*##########################*/
-/*main style section*/
-main{
-    display: flex;
-    flex-direction: column;
-    gap:var(--gap-space);
-    padding: 35px;
-    background-color: var(--light-gray-color);
-}
-/* shift + alt + A = hacer un bloque de comentarios*/
-.card-container{
-    display: flex;
-    gap: var(--gap-space);
-    height: 260px;
-}
-.card{
-    background-color:var(--white-color);
-    border-radius: 10px;
-}
-.sales-container-info{
-    width: 620px;
-}
-.infographi-title{
-    display:flex;
-    justify-content: space-between;
-}
-.infographic-sales{
-    display: flex;
-}
-
-.small-cards{
-    width: 140px;
-    height: 140px;
-}
-.visitor-graphic{
-    width: 450px;
-}
-.graphic-boxes{
-}
-.graphics-table{
-   
-}
-
