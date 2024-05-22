@@ -67,6 +67,10 @@ body{
     height: 1311px;
     
 }
+.back-ground-headers{
+    color: var(--dark-mid-night-blue);
+    font-weight: 600;
+}
 
 .back-ground-white{
     background-color: var(--white-color);
@@ -84,8 +88,8 @@ body{
 }
 
 .menu{
-    margin-left: 46px;
-    margin-right: 47px;
+  /*   margin-left: 46px;
+    margin-right: 47px; */
     li{
         list-style: none;/* eliminamos las viñetas */
         margin-top: 48px;
@@ -98,8 +102,10 @@ body{
             gap: 24px;/* separamos los iconos */
             padding-left: 24px;
             color: var(--gray-color);
+            margin-left: 46px;
+            margin-right: 47px;
         }
-    }
+    }     
 }
 
 .get-button-container{
@@ -205,13 +211,16 @@ body{
     margin: 32px;
     gap: 32px;
 
+      h3{
+            font-size:20px;
+        }
+
     .card-style{ /* ocho targetas */
         border-radius: 20px;
         padding: var(--padding-cards);
+        
         /* top products-table */
-        h3{
-            font-size:20px ;
-        }
+      
         th{
             font-size: 13px;
         }
@@ -236,6 +245,7 @@ body{
        
         p{
             font-size: 16px;
+            color: var(--strong-gray-color);
         }
        .button-container{
 
@@ -264,9 +274,11 @@ body{
         h4{
             font-size: 16px;
             font-weight: 500;
+            color: var(--strong-gray-color);
         }
         p{
             font-size: 12px;
+            color: var(--blue-sky-color) ;
         }
         .card{
             padding: 20px;
@@ -287,25 +299,35 @@ body{
     }
 }
 
+table{
+    /* propiedad  que se posicisiona en la tabla */
+    border-collapse: collapse;
+    text-align: left;
+    width: 645px;
+} 
+tr:nth-child(4){
+    border-bottom: 0;
+}  
+.headers:nth-child(1){
+    border-bottom: 2px solid var(--light-gray-color);
+    
+} 
+
 .persentege-products{
     padding: var(--padding-cards);
 
-    .headers{
+    th{
+        color: var(--gray-color);
+        font-weight: 400; 
         
-        th{
-            font-size: 13px;
-            color: var(--gray-color);
-            font-weight: 400;
-           
-        }
-        td{
-            font-size: 14px;
-            
-        }
-    }
+    } 
+    
 }
 .row-section{
-    /* border-bottom: 2px solid red; */
+   
+    border-bottom: 2px solid var(--light-gray-color);
+    color: var(--mid-night-blue);
+   
     .bar-length{
         width: 180px;
         height: 4px;
@@ -370,6 +392,8 @@ body{
         background-color: var(--light-light_orange);
         color: var(--orange);
     }
-
 }
-
+td{
+    padding-right: 40px;
+    padding-bottom: 37px;
+}
